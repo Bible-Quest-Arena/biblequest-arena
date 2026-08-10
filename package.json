@@ -1,0 +1,14 @@
+{
+  "name": "biblequest-arena",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check netlify/functions/api.mjs && node --check netlify/functions/stripe-webhook.mjs && node --check netlify/functions/_shared.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9",
+    "stripe": "^22.3.2"
+  },
+  "engines": { "node": ">=20" }
+}
